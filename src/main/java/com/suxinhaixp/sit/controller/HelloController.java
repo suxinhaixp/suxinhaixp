@@ -1,12 +1,13 @@
 package com.suxinhaixp.sit.controller;
 
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloController {
-    @RequestMapping("/hello")
-    public String hello(){
-        return "hello";
+    @RequestMapping("/hello/{name}")
+    public String hello(@PathVariable String name){
+        return name;
     }
 }
