@@ -1,8 +1,13 @@
 package com.suxinhaixp.sit.config;
 
 
+import com.suxinhaixp.sit.component.LoginHandlerInterceptor;
+import com.suxinhaixp.sit.component.MylocaleResolver;
 import org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.LocaleResolver;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
@@ -13,4 +18,25 @@ public class MyMvcConfig extends WebMvcConfigurerAdapter {
         //super.addViewControllers(registry);
         registry.addViewController("/").setViewName("login");
     }
+    @Bean
+    public LocaleResolver localeResolver()
+    {
+        return new MylocaleResolver();
+    }
+
+    @Bean
+    public WebMvcConfigurerAdapter webMvcConfigurerAdapter(){
+        WebMvcConfigurerAdapter  adapter = new WebMvcConfigurerAdapter()
+        {
+            //注册拦截器
+            @Override
+            public void addInterceptors(InterceptorRegistry registry) {
+                //super.addInterceptors(registry);
+                registry.addInterceptor(new LoginHandlerInterceptor()).addPathPatterns("/**").excludePathPatterns("/","/login","/IsManager");
+            }
+        };
+    return  adapter;
+    }
+
+
 }

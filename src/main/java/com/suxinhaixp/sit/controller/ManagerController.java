@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpSession;
+
 @Controller
 @RequestMapping("")
 public class ManagerController {
@@ -14,14 +16,15 @@ public class ManagerController {
     private ManagerDao managerDao;
 
     @ResponseBody
-    @PostMapping(value = "IsManager")
-    public Response IsManager(Manager manager) {
+    @PostMapping(value = "/IsManager")
+    public Response IsManager(@RequestBody Manager manager, HttpSession session) {
         Manager manager_get=managerDao.findByUsernameAndPassword(manager.getUsername(),manager.getPassword());
         if (manager_get!=null) {
             Response response=new Response("sure",manager_get);
+            session.setAttribute("loginuser",manager.getUsername());
             return response;
         }
-        return null;
+        return new Response("not",null);
     }
 
 }

@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 		<meta name="description" content="" />
 		<meta name="author" content="" />
+		<script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
 		<title>食堂后台管理</title>
 		<!-- Bootstrap core CSS -->
 		<link th:href="@{/asserts/css/bootstrap.min.css}" rel="stylesheet"/>
@@ -13,24 +14,62 @@
 	</head>
 
 	<body class="text-center">
-		<form class="form-signin" action="dashboard.html">
+		<form  id="form1" class="form-signin" action="dashboard.html">
 			<img class="mb-4" th:src="@{/asserts/img/bootstrap-solid.svg}" alt="" width="72" height="72" />
-			<h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-			<label class="sr-only">Username</label>
-			<input type="text" class="form-control" placeholder="Username" required="" autofocus="" />
-			<label class="sr-only">Password</label>
-			<input type="password" class="form-control" placeholder="Password" required="" />
+			<h1 class="h3 mb-3 font-weight-normal" th:text="#{login.tip}">Please sign in</h1>
+
+			<!--<p style="color: red" th:text="${mes}" th:if="${not #strings.isEmpty(msg) }"></p>-->
+
+			<label class="sr-only" th:text="#{login.username}">Username</label>
+			<input id="username-label" type="text" class="form-control" placeholder="Username" required="" autofocus=""  th:placeholder="#{login.username}"/>
+			<label class="sr-only" th:text="#{login.password}">Password</label>
+			<input id="password-label" type="password" class="form-control" placeholder="Password" required=""  th:placeholder="#{login.password}"/>
 			<div class="checkbox mb-3">
 				<label>
-          <input type="checkbox" value="remember-me"> Remember me
+          <input type="checkbox" value="remember-me" > [[#{login.Remember}]]
         </label>
 			</div>
-			<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+			<button id="signin" class="btn btn-lg btn-primary btn-block" type="submit" th:text="#{login.Sign}">Sign in</button>
 			<p class="mt-5 mb-3 text-muted">© 2018-2019</p>
-			<a class="btn btn-sm">中文</a>
-			<a class="btn btn-sm">English</a>
+			<a class="btn btn-sm"  th:href="@{/login(l='zh_CN')}">中文</a>
+			<a class="btn btn-sm"  th:href="@{/login(l='en_US')}">English</a>
 		</form>
 
 	</body>
 
 </html>
+<script>
+	$(document).ready(function () {
+		// SUBMIT FORM
+		$("#form1").submit(function (event) {
+			// Prevent the form from submitting via the browser.
+			event.preventDefault();
+			var formData = {
+				username: $("#username-label").val(),
+				password: $("#password-label").val()
+			};
+			if (formData.username!=null && formData.username !="" ) {
+				$.ajax({
+					url: "/IsManager",
+					type: "POST",
+					contentType: "application/json",
+					data: JSON.stringify(formData),
+					dataType: 'json',
+					success: function (data) {
+						console.log(data);
+						if (data.status == "not") {
+							alert("帐号密码错误！");
+							document.getElementById("username-label").value = "";
+							document.getElementById("password-label").value = "";
+						} else if(data.status == "sure") {
+							alert("登录成功！");
+							window.location.href = "/index";
+						}
+					}
+				});
+			} else {
+				alert("帐号格式不对！");
+			}
+		});
+	});
+</script>
