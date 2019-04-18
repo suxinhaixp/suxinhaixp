@@ -15,7 +15,7 @@ public class ManagerController {
 
     @ResponseBody
     @PostMapping(value = "IsManager")
-    public Response IsManager(@RequestBody Manager manager) {
+    public Response IsManager(Manager manager) {
         Manager manager_get=managerDao.findByUsernameAndPassword(manager.getUsername(),manager.getPassword());
         if (manager_get!=null) {
             Response response=new Response("sure",manager_get);
