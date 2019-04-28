@@ -41,12 +41,15 @@
 <script>
 	$(document).ready(function () {
 		// SUBMIT FORM
+
 		$("#form1").submit(function (event) {
 			// Prevent the form from submitting via the browser.
 			event.preventDefault();
 			var formData = {
 				username: $("#username-label").val(),
-				password: $("#password-label").val()
+				password: $("#password-label").val(),
+				alg: "HS256",
+				typ: "JWT"
 			};
 			if (formData.username!=null && formData.username !="" ) {
 				$.ajax({
@@ -62,8 +65,11 @@
 							document.getElementById("username-label").value = "";
 							document.getElementById("password-label").value = "";
 						} else if(data.status == "sure") {
+							sessionStorage.setItem("token",data.token);
+							var token =sessionStorage.getItem("token")
+							console.log(token);
 							alert("登录成功！");
-							window.location.href = "/index";
+							   window.location.href = "/index";
 						}
 					}
 				});
