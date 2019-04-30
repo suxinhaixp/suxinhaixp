@@ -65,9 +65,9 @@
 							document.getElementById("username-label").value = "";
 							document.getElementById("password-label").value = "";
 						} else if(data.status == "sure") {
-							sessionStorage.setItem("token",data.token);
-							var token =sessionStorage.getItem("token")
-							console.log(token);
+							sessionStorage.setItem("user",data.data.username);
+							var user =sessionStorage.getItem("user")
+							console.log(user);
 							alert("登录成功！");
 							   window.location.href = "/index";
 						}

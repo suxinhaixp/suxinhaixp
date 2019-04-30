@@ -28,7 +28,7 @@ public class MyMvcConfig implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(authenticationInterceptor()).addPathPatterns("/**").
-                excludePathPatterns("/druid/*","/IsManager","/","/login");
+                excludePathPatterns("/druid/*","/IsManager","/","/login","/index");
 //        registry.addInterceptor(new HomeInterceptor()).addPathPatterns("/**").
 //                excludePathPatterns("/","/login","/IsManager","/druid/*");
     }

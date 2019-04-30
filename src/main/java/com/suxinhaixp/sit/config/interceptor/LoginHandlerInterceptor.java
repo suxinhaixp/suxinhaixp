@@ -42,7 +42,7 @@ public class LoginHandlerInterceptor implements HandlerInterceptor {
         }
             if (date.getTime()>(JWT.decode(token).getExpiresAt()).getTime()) {
                 response.sendRedirect("/");
-                System.out.println("无token，请重新登录");
+                System.out.println("请重新登录");
                 return false;
             }
 
