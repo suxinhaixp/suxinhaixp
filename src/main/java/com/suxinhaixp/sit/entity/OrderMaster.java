@@ -12,10 +12,7 @@ import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 import java.util.Date;
 
-/**
- * Created by 廖师兄
- * 2017-06-11 17:08
- */
+
 @Entity
 @Table(uniqueConstraints={@UniqueConstraint(columnNames={"buyerOpenid"})})
 @Data

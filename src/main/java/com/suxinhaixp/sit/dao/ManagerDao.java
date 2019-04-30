@@ -1,6 +1,7 @@
 package com.suxinhaixp.sit.dao;
 
 import com.suxinhaixp.sit.entity.Manager;
+import com.suxinhaixp.sit.service.ManagerService;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

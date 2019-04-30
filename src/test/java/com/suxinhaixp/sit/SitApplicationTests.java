@@ -18,10 +18,21 @@ public class SitApplicationTests {
     }
 
     @Test
-    public  void test(){
+    public  void selecet(){
         ProductCategory productCategory= productCategoryRepository.findByCategoryId(1);
         System.out.println(productCategory);
     }
+
+    @Test
+    public void save()
+    {
+        ProductCategory productCategory=productCategoryRepository.findByCategoryId(1);
+
+        productCategory.setCategoryType(10);
+        productCategoryRepository.save(productCategory);
+    }
+
+
 
 
 }

@@ -11,11 +11,7 @@ import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 import java.util.Date;
 
-/**
- * 类目
- * Created by 廖师兄
- * 2017-05-07 14:30
- */
+
 
 @DynamicUpdate
 @Data
