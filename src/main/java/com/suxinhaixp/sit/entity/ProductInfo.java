@@ -54,8 +54,9 @@ public class ProductInfo {
 
     @Column(name = "update_time",insertable = false,updatable = false,columnDefinition="TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP")
     private Date updateTime;
-//    @JsonIgnore
-//    public ProductStatusEnum getProductStatusEnum() {
-//        return EnumUtil.getByCode(productStatus, ProductStatusEnum.class);
-//    }
+
+    @JsonIgnore
+    public ProductStatusEnum getProductStatusEnum() {
+        return EnumUtil.getByCode(productStatus, ProductStatusEnum.class);
+    }
 }
