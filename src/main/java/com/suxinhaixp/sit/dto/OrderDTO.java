@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.suxinhaixp.sit.entity.OrderDetail;
 import com.suxinhaixp.sit.enums.OrderStatusEnum;
 import com.suxinhaixp.sit.enums.PayStatusEnum;
+import com.suxinhaixp.sit.util.serializer.Date2LongSerializer;
 import lombok.Data;
 
 import java.math.BigDecimal;
@@ -15,6 +16,8 @@ import java.util.List;
 
 @Data
 //@JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)
+
+
 //@JsonInclude(JsonInclude.Include.NON_NULL)
 public class OrderDTO {
 

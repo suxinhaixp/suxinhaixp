@@ -2,7 +2,9 @@ package com.suxinhaixp.sit.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.suxinhaixp.sit.enums.ProductStatusEnum;
+import com.suxinhaixp.sit.util.serializer.Date2LongSerializer;
 import lombok.Data;
 import org.hibernate.annotations.DynamicUpdate;
 
@@ -49,9 +51,11 @@ public class ProductInfo {
     @NotNull
     private Integer categoryType;
 
+    @JsonSerialize(using = Date2LongSerializer.class)
     @Column(name = "create_time",insertable = false,updatable = false,columnDefinition="TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
     private Date createTime;
 
+    @JsonSerialize(using = Date2LongSerializer.class)
     @Column(name = "update_time",insertable = false,updatable = false,columnDefinition="TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP")
     private Date updateTime;
 

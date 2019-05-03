@@ -2,8 +2,10 @@ package com.suxinhaixp.sit.entity;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.suxinhaixp.sit.enums.OrderStatusEnum;
 import com.suxinhaixp.sit.enums.PayStatusEnum;
+import com.suxinhaixp.sit.util.serializer.Date2LongSerializer;
 import lombok.Data;
 import org.hibernate.annotations.DynamicUpdate;
 
@@ -53,9 +55,10 @@ public class OrderMaster {
     @NotNull
     private Integer payStatus = PayStatusEnum.WAIT.getCode();
 
+    @JsonSerialize(using = Date2LongSerializer.class)
     @Column(name = "create_time",insertable = false,updatable = false,columnDefinition="TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
     private Date createTime;
-
+    @JsonSerialize(using = Date2LongSerializer.class)
     @Column(name = "update_time",insertable = false,updatable = false,columnDefinition="TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP")
     private Date updateTime;
 
