@@ -1,9 +1,9 @@
 package com.suxinhaixp.sit.controller;
 
-import com.imooc.dataobject.ProductCategory;
-import com.imooc.exception.SellException;
-import com.imooc.form.CategoryForm;
-import com.imooc.service.CategoryService;
+import com.suxinhaixp.sit.entity.ProductCategory;
+import com.suxinhaixp.sit.exception.SellException;
+import com.suxinhaixp.sit.form.CategoryForm;
+import com.suxinhaixp.sit.service.CategoryService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -18,11 +18,6 @@ import javax.validation.Valid;
 import java.util.List;
 import java.util.Map;
 
-/**
- * 卖家类目
- * Created by 廖师兄
- * 2017-07-23 21:06
- */
 @Controller
 @RequestMapping("/seller/category")
 public class SellerCategoryController {

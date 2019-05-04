@@ -29,6 +29,11 @@
                 <!--</exclusion>-->
             <!--</exclusions>-->
         </dependency>
+        <!-- 添加freemarker依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-freemarker</artifactId>
+        </dependency>
 
         <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
         <dependency>

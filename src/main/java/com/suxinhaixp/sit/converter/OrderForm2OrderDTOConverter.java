@@ -2,6 +2,7 @@ package com.suxinhaixp.sit.converter;
 
 
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import com.suxinhaixp.sit.dto.OrderDTO;
 import com.suxinhaixp.sit.entity.OrderDetail;
 import com.suxinhaixp.sit.enums.ResultEnum;

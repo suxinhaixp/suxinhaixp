@@ -2,10 +2,10 @@ package com.suxinhaixp.sit.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-
 import com.suxinhaixp.sit.entity.OrderDetail;
 import com.suxinhaixp.sit.enums.OrderStatusEnum;
 import com.suxinhaixp.sit.enums.PayStatusEnum;
+import com.suxinhaixp.sit.util.EnumUtil;
 import com.suxinhaixp.sit.util.serializer.Date2LongSerializer;
 import lombok.Data;
 

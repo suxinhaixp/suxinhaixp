@@ -13,10 +13,7 @@ import com.suxinhaixp.sit.enums.OrderStatusEnum;
 import com.suxinhaixp.sit.enums.PayStatusEnum;
 import com.suxinhaixp.sit.enums.ResultEnum;
 import com.suxinhaixp.sit.exception.SellException;
-import com.suxinhaixp.sit.service.OrderService;
-import com.suxinhaixp.sit.service.PayService;
-import com.suxinhaixp.sit.service.ProductService;
-import com.suxinhaixp.sit.service.PushMessageService;
+import com.suxinhaixp.sit.service.*;
 import com.suxinhaixp.sit.util.KeyUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
@@ -47,11 +44,11 @@ public class OrderServiceImpl implements OrderService {
     @Autowired
     private OrderMasterRepository orderMasterRepository;
 
-    @Autowired
-    private PayService payService;
-
-    @Autowired
-    private PushMessageService pushMessageService;
+//    @Autowired
+//    private PayService payService;
+//
+//    @Autowired
+//    private PushMessageService pushMessageService;
 
     @Autowired
     private WebSocket webSocket;
@@ -171,7 +168,7 @@ public class OrderServiceImpl implements OrderService {
 
         //如果已支付, 需要退款
         if (orderDTO.getPayStatus().equals(PayStatusEnum.SUCCESS.getCode())) {
-            payService.refund(orderDTO);
+//            payService.refund(orderDTO);
         }
 
         return orderDTO;
@@ -197,7 +194,7 @@ public class OrderServiceImpl implements OrderService {
         }
 
         //推送微信模版消息
-        pushMessageService.orderStatus(orderDTO);
+//        pushMessageService.orderStatus(orderDTO);
 
         return orderDTO;
     }

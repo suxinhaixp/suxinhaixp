@@ -1,9 +1,8 @@
 package com.suxinhaixp.sit.config;
 
 
-import com.suxinhaixp.sit.config.interceptor.HomeInterceptor;
-import com.suxinhaixp.sit.config.interceptor.LoginHandlerInterceptor;
 import com.suxinhaixp.sit.component.MylocaleResolver;
+import com.suxinhaixp.sit.config.interceptor.LoginHandlerInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.LocaleResolver;
@@ -27,8 +26,8 @@ public class MyMvcConfig implements WebMvcConfigurer {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(authenticationInterceptor()).addPathPatterns("/**").
-                excludePathPatterns("/druid/*","/IsManager","/","/login","/index");
+//        registry.addInterceptor(authenticationInterceptor()).addPathPatterns("/**").
+//                excludePathPatterns("/druid/*","/IsManager","/","/login","/index");
 //        registry.addInterceptor(new HomeInterceptor()).addPathPatterns("/**").
 //                excludePathPatterns("/","/login","/IsManager","/druid/*");
     }

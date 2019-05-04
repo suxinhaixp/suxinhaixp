@@ -1,9 +1,9 @@
 package com.suxinhaixp.sit.controller;
 
-import com.imooc.dto.OrderDTO;
-import com.imooc.enums.ResultEnum;
-import com.imooc.exception.SellException;
-import com.imooc.service.OrderService;
+import com.suxinhaixp.sit.dto.OrderDTO;
+import com.suxinhaixp.sit.enums.ResultEnum;
+import com.suxinhaixp.sit.exception.SellException;
+import com.suxinhaixp.sit.service.OrderService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -16,11 +16,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import java.util.Map;
 
-/**
- * 卖家端订单
- * Created by 廖师兄
- * 2017-07-16 17:24
- */
+
 @Controller
 @RequestMapping("/seller/order")
 @Slf4j

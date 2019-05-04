@@ -8,10 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.Date;
 
 
-/**
- * @author jinbin
- * @date 2018-07-08 21:04
- */
+
 @Service("TokenService")
 public class TokenService {
     private  final  long EXPIRE_TIME=300 * 1000;

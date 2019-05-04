@@ -1,12 +1,13 @@
 package com.suxinhaixp.sit.controller;
 
-import com.imooc.dataobject.ProductCategory;
-import com.imooc.dataobject.ProductInfo;
-import com.imooc.exception.SellException;
-import com.imooc.form.ProductForm;
-import com.imooc.service.CategoryService;
-import com.imooc.service.ProductService;
-import com.imooc.utils.KeyUtil;
+
+import com.suxinhaixp.sit.entity.ProductCategory;
+import com.suxinhaixp.sit.entity.ProductInfo;
+import com.suxinhaixp.sit.exception.SellException;
+import com.suxinhaixp.sit.form.ProductForm;
+import com.suxinhaixp.sit.service.CategoryService;
+import com.suxinhaixp.sit.service.ProductService;
+import com.suxinhaixp.sit.util.KeyUtil;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -24,11 +25,7 @@ import javax.validation.Valid;
 import java.util.List;
 import java.util.Map;
 
-/**
- * 卖家端商品
- * Created by 廖师兄
- * 2017-07-23 15:12
- */
+
 @Controller
 @RequestMapping("/seller/product")
 public class SellerProductController {

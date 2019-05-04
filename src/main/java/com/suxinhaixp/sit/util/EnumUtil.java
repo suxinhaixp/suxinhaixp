@@ -2,10 +2,7 @@ package com.suxinhaixp.sit.util;
 
 import com.suxinhaixp.sit.enums.CodeEnum;
 
-/**
- * Created by 廖师兄
- * 2017-07-16 18:36
- */
+
 public class EnumUtil {
 
     public static <T extends CodeEnum> T getByCode(Integer code, Class<T> enumClass) {

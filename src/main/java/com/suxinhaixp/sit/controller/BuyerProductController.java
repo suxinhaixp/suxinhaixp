@@ -1,15 +1,13 @@
 package com.suxinhaixp.sit.controller;
 
-import com.imooc.VO.ProductInfoVO;
-import com.imooc.VO.ProductVO;
-import com.imooc.VO.ResultVO;
-import com.imooc.dataobject.ProductCategory;
-import com.imooc.dataobject.ProductInfo;
-import com.imooc.service.CategoryService;
-import com.imooc.service.ProductService;
-import com.imooc.utils.ResultVOUtil;
+import com.suxinhaixp.sit.VO.ProductInfoVO;
+import com.suxinhaixp.sit.VO.ProductVO;
+import com.suxinhaixp.sit.VO.ResultVO;
+import com.suxinhaixp.sit.entity.ProductCategory;
+import com.suxinhaixp.sit.entity.ProductInfo;
 import com.suxinhaixp.sit.service.CategoryService;
 import com.suxinhaixp.sit.service.ProductService;
+import com.suxinhaixp.sit.util.ResultVOUtil;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,11 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * 买家商品
- * Created by 廖师兄
- * 2017-05-12 14:08
- */
+
 @RestController
 @RequestMapping("/buyer/product")
 public class BuyerProductController {
