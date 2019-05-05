@@ -799,3 +799,74 @@ com.suxinhaixp.sit.exception.SellException: 订单详情不存在
 2019-05-04 14:10:29.937  INFO 4748 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2019-05-04 14:10:29.940  INFO 4748 --- [Thread-8] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
 2019-05-04 14:10:29.946  INFO 4748 --- [Thread-8] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-05-05 09:35:31.191  INFO 7428 --- [restartedMain] com.suxinhaixp.sit.SitApplication        : Starting SitApplication on DESKTOP-769T73B with PID 7428 (D:\OwnWorkspace\sit\target\classes started by Administrator in D:\OwnWorkspace\sit)
+2019-05-05 09:35:31.202  INFO 7428 --- [restartedMain] com.suxinhaixp.sit.SitApplication        : No active profile set, falling back to default profiles: default
+2019-05-05 09:35:31.327  INFO 7428 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-05-05 09:35:31.327  INFO 7428 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-05-05 09:35:33.632  INFO 7428 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-05-05 09:35:33.874  INFO 7428 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 220ms. Found 5 repository interfaces.
+2019-05-05 09:35:34.668  INFO 7428 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cb85ab13] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-05 09:35:35.376  INFO 7428 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-05-05 09:35:35.468  INFO 7428 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-05 09:35:35.469  INFO 7428 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-05-05 09:35:35.910  INFO 7428 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/sell]   : Initializing Spring embedded WebApplicationContext
+2019-05-05 09:35:35.911  INFO 7428 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4584 ms
+2019-05-05 09:35:37.045  INFO 7428 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-05-05 09:35:37.335  INFO 7428 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2019-05-05 09:35:37.341  INFO 7428 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-05-05 09:35:37.950  INFO 7428 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-05-05 09:35:43.017  INFO 7428 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-05-05 09:35:43.063  INFO 7428 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-05-05 09:35:46.048  INFO 7428 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-05-05 09:35:46.201  INFO 7428 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-05-05 09:35:48.335  INFO 7428 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-05 09:35:48.480  WARN 7428 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-05-05 09:35:48.890  WARN 7428 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-05-05 09:35:49.012  INFO 7428 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-05-05 09:35:49.774  INFO 7428 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/sell'
+2019-05-05 09:35:49.784  INFO 7428 --- [restartedMain] com.suxinhaixp.sit.SitApplication        : Started SitApplication in 20.186 seconds (JVM running for 24.554)
+2019-05-05 09:37:07.511  INFO 7428 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/sell]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-05 09:37:07.511  INFO 7428 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-05-05 09:37:07.545  INFO 7428 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 33 ms
+2019-05-05 09:40:16.217  INFO 7428 --- [http-nio-8080-exec-2] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-05-05 10:19:54.179  INFO 7428 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-05-05 10:19:54.205  INFO 7428 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-05-05 10:19:54.256  INFO 7428 --- [Thread-9] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2019-05-05 10:19:54.287  INFO 7428 --- [Thread-9] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-05-05 10:28:41.096  INFO 9540 --- [restartedMain] com.suxinhaixp.sit.SitApplication        : Starting SitApplication on DESKTOP-769T73B with PID 9540 (D:\OwnWorkspace\sit\target\classes started by Administrator in D:\OwnWorkspace\sit)
+2019-05-05 10:28:41.104  INFO 9540 --- [restartedMain] com.suxinhaixp.sit.SitApplication        : No active profile set, falling back to default profiles: default
+2019-05-05 10:28:41.294  INFO 9540 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-05-05 10:28:41.296  INFO 9540 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-05-05 10:28:43.858  INFO 9540 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-05-05 10:28:44.440  INFO 9540 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 535ms. Found 5 repository interfaces.
+2019-05-05 10:28:45.641  INFO 9540 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e7f38690] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-05 10:28:46.833  INFO 9540 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-05-05 10:28:46.923  INFO 9540 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-05 10:28:46.925  INFO 9540 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-05-05 10:28:47.353  INFO 9540 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/sell]   : Initializing Spring embedded WebApplicationContext
+2019-05-05 10:28:47.354  INFO 9540 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6058 ms
+2019-05-05 10:28:48.755  INFO 9540 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-05-05 10:28:49.163  INFO 9540 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2019-05-05 10:28:49.171  INFO 9540 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-05-05 10:28:49.984  INFO 9540 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-05-05 10:28:51.881  INFO 9540 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-05-05 10:28:51.982  INFO 9540 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-05-05 10:28:55.355  INFO 9540 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-05-05 10:28:55.556  INFO 9540 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-05-05 10:28:57.966  INFO 9540 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-05 10:28:58.095  WARN 9540 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-05-05 10:28:58.554  WARN 9540 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-05-05 10:28:59.622  INFO 9540 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/sell'
+2019-05-05 10:28:59.630  INFO 9540 --- [restartedMain] com.suxinhaixp.sit.SitApplication        : Started SitApplication in 20.771 seconds (JVM running for 27.948)
+2019-05-05 10:29:16.016  INFO 9540 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/sell]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-05 10:29:16.017  INFO 9540 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-05-05 10:29:16.040  INFO 9540 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 23 ms
+2019-05-05 10:29:16.736  INFO 9540 --- [http-nio-8080-exec-2] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-05-05 12:30:23.709  INFO 9540 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-05-05 12:30:23.780  INFO 9540 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-05-05 12:30:23.850  INFO 9540 --- [Thread-9] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2019-05-05 12:30:23.915  INFO 9540 --- [Thread-9] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

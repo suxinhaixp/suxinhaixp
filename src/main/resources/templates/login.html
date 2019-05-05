@@ -24,6 +24,10 @@
 			<input id="username-label" type="text" class="form-control" placeholder="Username" required="" autofocus=""  th:placeholder="#{login.username}"/>
 			<label class="sr-only" th:text="#{login.password}">Password</label>
 			<input id="password-label" type="password" class="form-control" placeholder="Password" required=""  th:placeholder="#{login.password}"/>
+			<div class="checkbox mb-3">
+				<label>
+        </label>
+			</div>
 			<button id="signin" class="btn btn-lg btn-primary btn-block" type="submit" th:text="#{login.Sign}">Sign in</button>
 			<p class="mt-5 mb-3 text-muted">© 2018-2019</p>
 			<a class="btn btn-sm"  th:href="@{/login(l='zh_CN')}">中文</a>
@@ -48,7 +52,7 @@
 			};
 			if (formData.username!=null && formData.username !="" ) {
 				$.ajax({
-					url: "/IsManager",
+					url: "/sell/IsManager",
 					type: "POST",
 					contentType: "application/json",
 					data: JSON.stringify(formData),
@@ -64,7 +68,7 @@
 							var user =sessionStorage.getItem("user")
 							console.log(user);
 							alert("登录成功！");
-							   window.location.href = "sell/seller/order/list";
+							   window.location.href = "/sell/seller/order/list";
 						}
 					}
 				});
