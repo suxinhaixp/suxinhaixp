@@ -23,4 +23,8 @@ public class ProductInfoVO {
 
     @JsonProperty("icon")
     private String productIcon;
+
+    //新增
+    @JsonProperty("Count")
+    private int Count = 0;
 }

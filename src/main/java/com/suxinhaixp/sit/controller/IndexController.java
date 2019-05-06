@@ -15,4 +15,10 @@ public class IndexController {
     public String index(){
         return "index";
     }
+
+    @RequestMapping("/comment")
+    public String comment(){
+        return "/comment/comment";
+    }
+
 }
