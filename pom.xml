@@ -3,6 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
+        <!--springboot父文件-->
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.1.4.RELEASE</version>
@@ -13,20 +14,20 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>Sit</name>
     <description>Demo project for Spring Boot</description>
-
     <properties>
+        <!--java jdk文件版本-->
         <java.version>1.8</java.version>
     </properties>
-
     <dependencies>
+        <!--springboot web服务框架-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
             <!--<exclusions>-->
-                <!--<exclusion>-->
-                    <!--<groupId>org.springframework.boot</groupId>-->
-                    <!--<artifactId>spring-boot-starter-logging</artifactId>-->
-                <!--</exclusion>-->
+            <!--<exclusion>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-logging</artifactId>-->
+            <!--</exclusion>-->
             <!--</exclusions>-->
         </dependency>
         <!-- 添加freemarker依赖 -->
@@ -34,25 +35,22 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-freemarker</artifactId>
         </dependency>
-
         <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+        <!--josn转换框架-->
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
             <version>2.8.5</version>
         </dependency>
-
-
         <!--log4j2-->
         <!--<dependency>-->
-            <!--<groupId>org.springframework.boot</groupId>-->
-            <!--<artifactId>spring-boot-starter-log4j2</artifactId>-->
+        <!--<groupId>org.springframework.boot</groupId>-->
+        <!--<artifactId>spring-boot-starter-log4j2</artifactId>-->
         <!--</dependency>-->
         <dependency>  <!-- 加上这个才能辨认到log4j2.yml文件 -->
             <groupId>com.fasterxml.jackson.dataformat</groupId>
             <artifactId>jackson-dataformat-yaml</artifactId>
         </dependency>
-
         <!--添加热部署-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -60,6 +58,7 @@
             <optional>true</optional>
             <scope>true</scope>
         </dependency>
+        <!--springboot测试框架服务-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -70,57 +69,52 @@
             <artifactId>json-path</artifactId>
             <scope>test</scope>
         </dependency>
-
-<!--旧html-->
+        <!--旧html框架-->
         <dependency>
             <groupId>net.sourceforge.nekohtml</groupId>
             <artifactId>nekohtml</artifactId>
             <version>1.9.22</version>
         </dependency>
-<!--thymleaf模版-->
-
+        <!--thymleaf模版框架-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
-
-        <!--bootstrap-->
+        <!--bootstrap服务框架-->
         <dependency>
             <groupId>org.webjars</groupId>
             <artifactId>bootstrap</artifactId>
             <version>4.3.1</version>
         </dependency>
-
         <!-- 下面两个引入为了操作数据库 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
+        <!--mysql服务框架-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
-
-        <!--hibernate-->
-        <!--@Data依赖-->
+        <!--@Data依赖看框架-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.16.10</version>
         </dependency>
+        <!--hibernate框架-->
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-agroal</artifactId>
             <version>5.3.1.Final</version>
             <type>pom</type>
         </dependency>
-
-        <!--lombok-->
+        <!--lombok框架-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
-        <!--druid-->
+        <!--druid框架-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
@@ -132,7 +126,6 @@
             <artifactId>java-jwt</artifactId>
             <version>3.8.0</version>
         </dependency>
-
     </dependencies>
     <build>
         <plugins>

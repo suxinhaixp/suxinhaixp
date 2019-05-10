@@ -64,7 +64,6 @@ public class BuyerProductController {
             productVO.setProductInfoVOList(productInfoVOList);
             productVOList.add(productVO);
         }
-
         return ResultVOUtil.success(productVOList);
     }
 }
