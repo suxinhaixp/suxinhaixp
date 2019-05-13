@@ -2,12 +2,10 @@ package com.suxinhaixp.sit.config;
 
 
 //import com.suxinhaixp.sit.component.MyThymleafResolver;
+
 import com.suxinhaixp.sit.component.MyFreeMarkerViewResolver;
 import com.suxinhaixp.sit.component.MylocaleResolver;
 import com.suxinhaixp.sit.config.interceptor.LoginHandlerInterceptor;
-//import org.springframework.beans.BeanUtils;
-//import org.springframework.beans.factory.annotation.Autowired;
-//import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.LocaleResolver;
@@ -15,11 +13,23 @@ import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver;
-import org.thymeleaf.spring5.view.ThymeleafViewResolver;
+
+//import org.springframework.beans.BeanUtils;
+//import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.beans.factory.annotation.Value;
 
 
 @Configuration
 public class MyMvcConfig implements WebMvcConfigurer {
+    // 在某配置类中添加如下内容
+    // 监听的http请求的端口,需要在application配置中添加http.port=端口号  如80
+
+
+    //正常启用的https端口 如443
+
+
+    // springboot2 写法
+
 
     @Bean
     public FreeMarkerViewResolver freeMarkerViewResolver() {
@@ -51,7 +61,7 @@ public class MyMvcConfig implements WebMvcConfigurer {
 
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/").setViewName("/login.html");
+        registry.addViewController("").setViewName("login");
     }
 
     @Bean

@@ -14,7 +14,7 @@
 	</head>
 
 	<body class="text-center">
-		<form  id="form1" class="form-signin" action="dashboard.html">
+		<form  id="form1" class="form-signin">
 			<img class="mb-4" th:src="@{/asserts/img/zy.jpg}" alt="" width="144" height="144" />
 			<h1 class="h3 mb-3 font-weight-normal" th:text="#{login.tip}">Please sign in</h1>
 
@@ -68,7 +68,7 @@
 							var user =sessionStorage.getItem("user")
 							console.log(user);
 							alert("登录成功！");
-							   window.location.href = "/sell/index";
+							   window.location.href = "index";
 						}
 					}
 				});
