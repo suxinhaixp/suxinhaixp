@@ -6,7 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-
+//+11
 @Entity
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Data
