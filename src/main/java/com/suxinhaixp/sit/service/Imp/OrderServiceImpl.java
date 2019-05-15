@@ -50,8 +50,8 @@ public class OrderServiceImpl implements OrderService {
 //    @Autowired
 //    private PushMessageService pushMessageService;
 
-    @Autowired
-    private WebSocket webSocket;
+//    @Autowired
+//    private WebSocket webSocket;
 
     @Override
     @Transactional //事务注解
@@ -102,7 +102,7 @@ public class OrderServiceImpl implements OrderService {
         productService.decreaseStock(cartDTOList);
 
         //发送websocket消息
-        webSocket.sendMessage(orderDTO.getOrderId());
+//        webSocket.sendMessage(orderDTO.getOrderId());
 
         return orderDTO;
     }
@@ -133,7 +133,8 @@ public class OrderServiceImpl implements OrderService {
 
         List<OrderDTO> orderDTOList = OrderMaster2OrderDTOConverter.convert(orderMasterPage.getContent());
 
-        return new PageImpl<OrderDTO>(orderDTOList, pageable, orderMasterPage.getTotalElements());
+        PageImpl<OrderDTO> pageImpl =  new PageImpl<OrderDTO>(orderDTOList, pageable, orderMasterPage.getTotalElements());
+        return pageImpl;
     }
 
     @Override
