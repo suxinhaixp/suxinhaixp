@@ -1,5 +1,6 @@
 package com.suxinhaixp.sit.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
@@ -52,11 +53,11 @@ public class ProductInfo {
     @NotNull
     private Integer categoryType;
 
-    @JsonSerialize(using = Date2LongSerializer.class)
+    @JsonFormat(pattern = "yyyy-MM-dd HH-mm-ss")
     @Column(name = "create_time",insertable = false,updatable = false,columnDefinition="TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
     private Date createTime;
 
-    @JsonSerialize(using = Date2LongSerializer.class)
+    @JsonFormat(pattern = "yyyy-MM-dd HH-mm-ss")
     @Column(name = "update_time",insertable = false,updatable = false,columnDefinition="TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP")
     private Date updateTime;
 

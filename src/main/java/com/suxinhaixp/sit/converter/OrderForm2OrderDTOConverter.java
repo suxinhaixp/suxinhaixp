@@ -1,6 +1,7 @@
 package com.suxinhaixp.sit.converter;
 
 
+import com.alibaba.fastjson.JSON;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.suxinhaixp.sit.dto.OrderDTO;
@@ -26,9 +27,10 @@ public class OrderForm2OrderDTOConverter {
         orderDTO.setBuyerAddress(orderForm.getAddress());
         orderDTO.setBuyerOpenid(orderForm.getOpenid());
 
+        String od = JSON.toJSONString(orderForm.getItems());
         List<OrderDetail> orderDetailList = new ArrayList<>();
         try {
-            orderDetailList = gson.fromJson(orderForm.getItems(),
+            orderDetailList = gson.fromJson(od,
                     new TypeToken<List<OrderDetail>>() {
                     }.getType());
         } catch (Exception e) {

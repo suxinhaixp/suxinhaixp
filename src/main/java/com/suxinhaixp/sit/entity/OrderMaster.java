@@ -1,6 +1,7 @@
 package com.suxinhaixp.sit.entity;
 
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.suxinhaixp.sit.enums.OrderStatusEnum;
@@ -16,7 +17,6 @@ import java.util.Date;
 
 
 @Entity
-@Table(uniqueConstraints={@UniqueConstraint(columnNames={"buyerOpenid"})})
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 @DynamicUpdate
@@ -55,10 +55,12 @@ public class OrderMaster {
     @NotNull
     private Integer payStatus = PayStatusEnum.WAIT.getCode();
 
-    @JsonSerialize(using = Date2LongSerializer.class)
+//    @JsonSerialize(using = Date2LongSerializer.class)
+    @JsonFormat(pattern = "yyyy-MM-dd HH-mm-ss")
     @Column(name = "create_time",insertable = false,updatable = false,columnDefinition="TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
     private Date createTime;
-    @JsonSerialize(using = Date2LongSerializer.class)
+
+    @JsonFormat(pattern = "yyyy-MM-dd HH-mm-ss")
     @Column(name = "update_time",insertable = false,updatable = false,columnDefinition="TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP")
     private Date updateTime;
 

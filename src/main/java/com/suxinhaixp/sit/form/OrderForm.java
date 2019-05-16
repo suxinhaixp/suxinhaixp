@@ -1,7 +1,9 @@
 package com.suxinhaixp.sit.form;
 
+import com.alibaba.fastjson.JSONArray;
 import lombok.Data;
 import org.hibernate.validator.constraints.NotEmpty;
+import org.omg.CORBA.OBJ_ADAPTER;
 
 
 @Data
@@ -35,5 +37,5 @@ public class OrderForm {
      * 购物车
      */
     @NotEmpty(message = "购物车不能为空")
-    private String items;
+    private JSONArray items;
 }

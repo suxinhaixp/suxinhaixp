@@ -37,7 +37,7 @@ public class BuyerOrderController {
 
     //创建订单
     @PostMapping("/create")
-    public ResultVO<Map<String, String>> create(@Valid OrderForm orderForm,
+    public ResultVO<Map<String, String>> create( @Valid  @RequestBody OrderForm orderForm,
                                                 BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
             log.error("【创建订单】参数不正确, orderForm={}", orderForm);
@@ -85,10 +85,10 @@ public class BuyerOrderController {
     }
 
     //取消订单
-    @PostMapping("/cancel")
-    public ResultVO cancel(@RequestParam("openid") String openid,
-                           @RequestParam("orderId") String orderId) {
-        buyerService.cancelOrder(openid, orderId);
-        return ResultVOUtil.success();
-    }
+//    @PostMapping("/cancel")
+//    public ResultVO cancel(@RequestParam("openid") String openid,
+//                           @RequestParam("orderId") String orderId) {
+//        buyerService.cancelOrder(openid, orderId);
+//        return ResultVOUtil.success();
+//    }
 }

@@ -25,10 +25,27 @@
             </ul>
         </li>
         <li>
-            <a href="/sell/comment"><i class="fa fa-fw fa-list-alt"></i> 评论</a>
+            <a href="/sell/comment"><i class="fa fa-fw fa-list-alt"></i> 数据</a>
         </li>
         <li>
-            <a href="/sell/seller/logout"><i class="fa fa-fw fa-list-alt"></i> 登出</a>
+            <a onClick="closewin()"><i class="fa fa-fw fa-list-alt"></i>登出</a>
         </li>
     </ul>
 </nav>
+
+<script language="javascript">
+    // 这个脚本是 ie6和ie7 通用的脚本
+
+    function closewin() {
+        sessionStorage.setItem("user", "");
+        if (navigator.userAgent.indexOf("Firefox") != -1 || navigator.userAgent.indexOf("Chrome") != -1) {
+            window.location.href = "about:blank";
+            window.close();
+        } else {
+            window.opener = null;
+            window.open("", "_self");
+            window.close();
+        }
+
+    }
+</script>

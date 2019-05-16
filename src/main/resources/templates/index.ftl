@@ -1,4 +1,6 @@
+
 <!DOCTYPE html>
+
 <#include "common/header.ftl">
 <body>
 <#--边栏sidebar-->

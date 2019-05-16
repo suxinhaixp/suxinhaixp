@@ -7,7 +7,7 @@
     <#--边栏sidebar-->
     <#include "../common/nav.ftl">
     <div>
-        查看评论
+        查看数据
     </div>
 </body>
 </html>
