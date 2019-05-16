@@ -27,4 +27,7 @@ public class ProductInfoVO {
     //新增
     @JsonProperty("Count")
     private int Count = 0;
+
+    @JsonProperty("Quantity")
+    private int Quantity;
 }
