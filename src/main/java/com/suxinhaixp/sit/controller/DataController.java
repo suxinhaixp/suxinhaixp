@@ -18,6 +18,6 @@ public class DataController {
     @GetMapping("/selectsell")
     public List<Data> selectsel(@RequestParam("create_time") String create_time){
 
-        return dataRepository.getselled(create_time);
+        return dataRepository.getselled("%"+create_time+"%");
     }
 }
