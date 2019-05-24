@@ -14,6 +14,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
@@ -22,7 +23,9 @@ import java.util.Date;
 @Data
 @DynamicUpdate
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class ProductInfo {
+public class ProductInfo implements Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     @Id
     @NotNull

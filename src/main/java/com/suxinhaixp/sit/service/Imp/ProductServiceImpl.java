@@ -11,6 +11,9 @@ import com.suxinhaixp.sit.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.serializer.RedisSerializer;
+import org.springframework.data.redis.serializer.StringRedisSerializer;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -23,9 +26,36 @@ public class ProductServiceImpl implements ProductService {
     @Autowired
     private ProductInfoRepository repository;
 
+    @Autowired
+    private RedisTemplate<Object,Object> redisTemplate;
+
     @Override
-    public ProductInfo findOne(String productId) {
-        return repository.findByProductId(productId);
+    public ProductInfo findOne(String productId)
+    {
+        RedisSerializer redisSerializer = new StringRedisSerializer();
+        redisTemplate.setKeySerializer(redisSerializer);
+
+        ProductInfo productInfo = (ProductInfo) redisTemplate.opsForValue().get(productId);
+
+        if (productInfo == null){
+            synchronized (this){
+                //查询Redis缓存
+                productInfo = (ProductInfo) redisTemplate.opsForValue().get(productId);
+                if (productInfo == null){
+                    //缓存为空，查询数据库
+                    productInfo = repository.findByProductId(productId);
+                    System.out.println("查询的数据库...");
+                    //把查询出来的数据放入到Redis中
+                    redisTemplate.opsForValue().set(productId,productInfo);
+                }else {
+                    System.out.println("查询的缓存...");
+                }
+            }
+        }else {
+            System.out.println("查询的缓存...");
+            System.out.println(productInfo);
+        }
+        return productInfo;
     }
 
     @Override
