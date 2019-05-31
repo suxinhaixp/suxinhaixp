@@ -9,7 +9,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
 import org.springframework.context.annotation.Bean;
 
-
+/*
+*
+* 苏鑫海作品
+* */
 @SpringBootApplication
 public class SitApplication {
 
