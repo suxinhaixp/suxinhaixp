@@ -14,6 +14,6 @@ import java.util.Map;
 @Repository
 public interface DataRepository extends JpaRepository<Data,Integer> {
 
-@Query(value = "select SUM(product_quantity) as sellnumber,product_name from order_detail a where convert(a.create_time,char)  like ?1 GROUP BY product_id",nativeQuery = true)
+@Query(value = "select SUM(product_quantity) as sellnumber,product_name from order_detail a,order_master b where  a.order_id=b.order_id and order_status=0 and convert(a.create_time,char)  like ? GROUP BY product_id",nativeQuery = true)
      List<Data> getselled(String create_time);
 }

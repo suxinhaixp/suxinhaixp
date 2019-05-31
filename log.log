@@ -1,522 +1,80 @@
-2019-05-24 13:12:28.225  INFO 10096 --- [main] com.suxinhaixp.sit.SitApplication        : Starting SitApplication on DESKTOP-769T73B with PID 10096 (D:\OwnWorkspace\sit\target\classes started by Administrator in D:\OwnWorkspace\sit)
-2019-05-24 13:12:28.263  INFO 10096 --- [main] com.suxinhaixp.sit.SitApplication        : No active profile set, falling back to default profiles: default
-2019-05-24 13:12:30.757  INFO 10096 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-05-24 13:12:30.759  INFO 10096 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-05-24 13:12:31.224  INFO 10096 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 431ms. Found 6 repository interfaces.
-2019-05-24 13:12:31.279  INFO 10096 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-05-24 13:12:31.284  INFO 10096 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-05-24 13:12:31.349  INFO 10096 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.DataRepository.
-2019-05-24 13:12:31.351  INFO 10096 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.ManagerRepository.
-2019-05-24 13:12:31.355  INFO 10096 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.OrderDetailRepository.
-2019-05-24 13:12:31.362  INFO 10096 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.OrderMasterRepository.
-2019-05-24 13:12:31.379  INFO 10096 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.ProductCategoryRepository.
-2019-05-24 13:12:31.385  INFO 10096 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.ProductInfoRepository.
-2019-05-24 13:12:31.389  INFO 10096 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67ms. Found 0 repository interfaces.
-2019-05-24 13:12:32.817  INFO 10096 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4f649b6d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-05-24 13:12:34.100  INFO 10096 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 443 (https) 8080 (http)
-2019-05-24 13:12:34.233  INFO 10096 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-05-24 13:12:34.235  INFO 10096 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
-2019-05-24 13:12:34.768  INFO 10096 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/sell]   : Initializing Spring embedded WebApplicationContext
-2019-05-24 13:12:34.769  INFO 10096 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6331 ms
-2019-05-24 13:12:36.009  INFO 10096 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2019-05-31 16:54:53.026  INFO 12244 --- [main] com.suxinhaixp.sit.SitApplication        : Starting SitApplication on DESKTOP-769T73B with PID 12244 (D:\OwnWorkspace\sit\target\classes started by Administrator in D:\OwnWorkspace\sit)
+2019-05-31 16:54:53.080  INFO 12244 --- [main] com.suxinhaixp.sit.SitApplication        : No active profile set, falling back to default profiles: default
+2019-05-31 16:54:57.535  INFO 12244 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-05-31 16:54:57.536  INFO 12244 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-05-31 16:54:58.354  INFO 12244 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 620ms. Found 6 repository interfaces.
+2019-05-31 16:54:58.401  INFO 12244 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-05-31 16:54:58.405  INFO 12244 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-05-31 16:54:58.449  INFO 12244 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.DataRepository.
+2019-05-31 16:54:58.450  INFO 12244 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.ManagerRepository.
+2019-05-31 16:54:58.453  INFO 12244 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.OrderDetailRepository.
+2019-05-31 16:54:58.457  INFO 12244 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.OrderMasterRepository.
+2019-05-31 16:54:58.459  INFO 12244 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.ProductCategoryRepository.
+2019-05-31 16:54:58.463  INFO 12244 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.ProductInfoRepository.
+2019-05-31 16:54:58.466  INFO 12244 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33ms. Found 0 repository interfaces.
+2019-05-31 16:54:59.916  INFO 12244 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$71705320] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-31 16:55:02.190  INFO 12244 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 443 (https) 8080 (http)
+2019-05-31 16:55:02.311  INFO 12244 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-31 16:55:02.312  INFO 12244 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-05-31 16:55:02.533  INFO 12244 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/sell]   : Initializing Spring embedded WebApplicationContext
+2019-05-31 16:55:02.534  INFO 12244 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 9294 ms
+2019-05-31 16:55:03.360  INFO 12244 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2019-05-24 13:12:36.268  INFO 10096 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
-2019-05-24 13:12:36.273  INFO 10096 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-05-24 13:12:36.843  INFO 10096 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-05-24 13:12:38.337  INFO 10096 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-05-24 13:12:38.379  INFO 10096 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2019-05-24 13:12:43.880  INFO 10096 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-05-24 13:12:45.054  WARN 10096 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'buyerOrderController': Unsatisfied dependency expressed through field 'orderService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderServiceImpl': Unsatisfied dependency expressed through field 'productService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productServiceImpl': Unsatisfied dependency expressed through field 'redisTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redisTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties': Could not bind properties to 'RedisProperties' : prefix=spring.redis, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.redis.timeout' to java.time.Duration
-2019-05-24 13:12:45.055  INFO 10096 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2019-05-24 13:12:45.067  INFO 10096 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
-2019-05-24 13:12:45.078  INFO 10096 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
-2019-05-24 13:12:45.083  INFO 10096 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2019-05-24 13:12:45.124  INFO 10096 --- [main] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2019-05-24 13:12:45.136 ERROR 10096 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Failed to bind properties under 'spring.redis.timeout' to java.time.Duration:
-
-    Property: spring.redis.timeout
-    Value: 1000 
-    Origin: class path resource [application.properties]:118:22
-    Reason: failed to convert java.lang.String to java.time.Duration
-
-Action:
-
-Update your application's configuration
-
-2019-05-24 13:39:34.750  INFO 288 --- [main] com.suxinhaixp.sit.SitApplicationTests   : Starting SitApplicationTests on DESKTOP-769T73B with PID 288 (started by Administrator in D:\OwnWorkspace\sit)
-2019-05-24 13:39:34.753  INFO 288 --- [main] com.suxinhaixp.sit.SitApplicationTests   : No active profile set, falling back to default profiles: default
-2019-05-24 13:39:38.722  INFO 288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-05-24 13:39:38.728  INFO 288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-05-24 13:39:39.821  INFO 288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1055ms. Found 6 repository interfaces.
-2019-05-24 13:39:39.877  INFO 288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-05-24 13:39:39.880  INFO 288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-05-24 13:39:39.911  INFO 288 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.DataRepository.
-2019-05-24 13:39:39.912  INFO 288 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.ManagerRepository.
-2019-05-24 13:39:39.919  INFO 288 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.OrderDetailRepository.
-2019-05-24 13:39:39.923  INFO 288 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.OrderMasterRepository.
-2019-05-24 13:39:39.925  INFO 288 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.ProductCategoryRepository.
-2019-05-24 13:39:39.928  INFO 288 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.ProductInfoRepository.
-2019-05-24 13:39:39.928  INFO 288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32ms. Found 0 repository interfaces.
-2019-05-24 13:39:41.185  INFO 288 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f5c8056a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-05-24 13:39:42.157  INFO 288 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2019-05-31 16:55:03.596  INFO 12244 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2019-05-31 16:55:03.602  INFO 12244 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-05-31 16:55:04.485  INFO 12244 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-05-31 16:55:05.663  INFO 12244 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-05-31 16:55:05.685  INFO 12244 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-05-31 16:55:08.026  INFO 12244 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-05-31 16:55:12.763  INFO 12244 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-31 16:55:12.946  WARN 12244 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-05-31 16:55:13.959  WARN 12244 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-05-31 16:55:14.040  INFO 12244 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-05-31 16:55:16.104  INFO 12244 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 443 (https) 8080 (http) with context path '/sell'
+2019-05-31 16:55:16.109  INFO 12244 --- [main] com.suxinhaixp.sit.SitApplication        : Started SitApplication in 24.396 seconds (JVM running for 28.992)
+2019-05-31 16:55:27.290  INFO 12244 --- [https-jsse-nio-443-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/sell]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-31 16:55:27.291  INFO 12244 --- [https-jsse-nio-443-exec-10] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-05-31 16:55:27.316  INFO 12244 --- [https-jsse-nio-443-exec-10] o.s.web.servlet.DispatcherServlet        : Completed initialization in 25 ms
+2019-05-31 16:55:34.396  INFO 12244 --- [https-jsse-nio-443-exec-7] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-05-31 16:55:58.378  INFO 12244 --- [Thread-41] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-05-31 16:55:58.439  INFO 12244 --- [Thread-41] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-05-31 16:55:58.447  INFO 12244 --- [Thread-41] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2019-05-31 16:55:58.462  INFO 12244 --- [Thread-41] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-05-31 16:56:28.681  INFO 15600 --- [main] com.suxinhaixp.sit.SitApplicationTests   : Starting SitApplicationTests on DESKTOP-769T73B with PID 15600 (started by Administrator in D:\OwnWorkspace\sit)
+2019-05-31 16:56:28.687  INFO 15600 --- [main] com.suxinhaixp.sit.SitApplicationTests   : No active profile set, falling back to default profiles: default
+2019-05-31 16:56:30.778  INFO 15600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-05-31 16:56:30.783  INFO 15600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-05-31 16:56:31.332  INFO 15600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 513ms. Found 6 repository interfaces.
+2019-05-31 16:56:31.390  INFO 15600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-05-31 16:56:31.392  INFO 15600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-05-31 16:56:31.459  INFO 15600 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.DataRepository.
+2019-05-31 16:56:31.463  INFO 15600 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.ManagerRepository.
+2019-05-31 16:56:31.467  INFO 15600 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.OrderDetailRepository.
+2019-05-31 16:56:31.473  INFO 15600 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.OrderMasterRepository.
+2019-05-31 16:56:31.477  INFO 15600 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.ProductCategoryRepository.
+2019-05-31 16:56:31.479  INFO 15600 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.ProductInfoRepository.
+2019-05-31 16:56:31.484  INFO 15600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74ms. Found 0 repository interfaces.
+2019-05-31 16:56:32.685  INFO 15600 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2289209f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-31 16:56:33.841  INFO 15600 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2019-05-24 13:39:42.311  INFO 288 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
-2019-05-24 13:39:42.315  INFO 288 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-05-24 13:39:42.601  INFO 288 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-05-24 13:39:47.519  INFO 288 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-05-24 13:39:47.592  INFO 288 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2019-05-24 13:39:52.494  INFO 288 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-05-24 13:39:54.714  WARN 288 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'buyerOrderController': Unsatisfied dependency expressed through field 'orderService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderServiceImpl': Unsatisfied dependency expressed through field 'productService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productServiceImpl': Unsatisfied dependency expressed through field 'redisTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redisTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties': Could not bind properties to 'RedisProperties' : prefix=spring.redis, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.redis.timeout' to java.time.Duration
-2019-05-24 13:39:54.716  INFO 288 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2019-05-24 13:39:54.725  INFO 288 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
-2019-05-24 13:39:54.741  INFO 288 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
-2019-05-24 13:39:54.775  INFO 288 --- [main] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2019-05-24 13:39:54.782 ERROR 288 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Failed to bind properties under 'spring.redis.timeout' to java.time.Duration:
-
-    Property: spring.redis.timeout
-    Value: 1000 
-    Origin: class path resource [application.properties]:118:22
-    Reason: failed to convert java.lang.String to java.time.Duration
-
-Action:
-
-Update your application's configuration
-
-2019-05-24 13:39:54.821 ERROR 288 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@6a57ae10] to prepare test instance [com.suxinhaixp.sit.SitApplicationTests@4468c0ea]
-
-java.lang.IllegalStateException: Failed to load ApplicationContext
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
-	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.12.jar:4.12]
-	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) [junit-rt.jar:na]
-	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47) [junit-rt.jar:na]
-	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242) [junit-rt.jar:na]
-	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70) [junit-rt.jar:na]
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'buyerOrderController': Unsatisfied dependency expressed through field 'orderService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderServiceImpl': Unsatisfied dependency expressed through field 'productService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productServiceImpl': Unsatisfied dependency expressed through field 'redisTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redisTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties': Could not bind properties to 'RedisProperties' : prefix=spring.redis, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.redis.timeout' to java.time.Duration
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127) ~[spring-boot-test-2.1.4.RELEASE.jar:2.1.4.RELEASE]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	... 24 common frames omitted
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderServiceImpl': Unsatisfied dependency expressed through field 'productService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productServiceImpl': Unsatisfied dependency expressed through field 'redisTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redisTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties': Could not bind properties to 'RedisProperties' : prefix=spring.redis, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.redis.timeout' to java.time.Duration
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1247) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	... 42 common frames omitted
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productServiceImpl': Unsatisfied dependency expressed through field 'redisTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redisTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties': Could not bind properties to 'RedisProperties' : prefix=spring.redis, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.redis.timeout' to java.time.Duration
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1247) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	... 55 common frames omitted
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redisTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties': Could not bind properties to 'RedisProperties' : prefix=spring.redis, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.redis.timeout' to java.time.Duration
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1247) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	... 68 common frames omitted
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties': Could not bind properties to 'RedisProperties' : prefix=spring.redis, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.redis.timeout' to java.time.Duration
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1341) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1187) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:392) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1247) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	... 81 common frames omitted
-Caused by: org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties': Could not bind properties to 'RedisProperties' : prefix=spring.redis, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.redis.timeout' to java.time.Duration
-	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.bind(ConfigurationPropertiesBindingPostProcessor.java:110) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
-	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.postProcessBeforeInitialization(ConfigurationPropertiesBindingPostProcessor.java:93) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:414) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1247) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	... 104 common frames omitted
-Caused by: org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.redis.timeout' to java.time.Duration
-	at org.springframework.boot.context.properties.bind.Binder.handleBindError(Binder.java:249) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
-	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:225) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
-	at org.springframework.boot.context.properties.bind.Binder.lambda$bindBean$3(Binder.java:336) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
-	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:83) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
-	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:72) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
-	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:54) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
-	at org.springframework.boot.context.properties.bind.Binder.lambda$null$4(Binder.java:344) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193) ~[na:1.8.0_201]
-	at java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1359) ~[na:1.8.0_201]
-	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126) ~[na:1.8.0_201]
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498) ~[na:1.8.0_201]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485) ~[na:1.8.0_201]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471) ~[na:1.8.0_201]
-	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152) ~[na:1.8.0_201]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:1.8.0_201]
-	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464) ~[na:1.8.0_201]
-	at org.springframework.boot.context.properties.bind.Binder.lambda$bindBean$5(Binder.java:345) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
-	at org.springframework.boot.context.properties.bind.Binder$Context.withIncreasedDepth(Binder.java:448) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
-	at org.springframework.boot.context.properties.bind.Binder$Context.withBean(Binder.java:434) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
-	at org.springframework.boot.context.properties.bind.Binder$Context.access$400(Binder.java:388) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
-	at org.springframework.boot.context.properties.bind.Binder.bindBean(Binder.java:342) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
-	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:277) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
-	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:220) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
-	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:208) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
-	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:190) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
-	at org.springframework.boot.context.properties.ConfigurationPropertiesBinder.bind(ConfigurationPropertiesBinder.java:83) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
-	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.bind(ConfigurationPropertiesBindingPostProcessor.java:107) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
-	... 118 common frames omitted
-Caused by: org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [java.time.Duration] for value '1000 '; nested exception is java.lang.IllegalArgumentException: '1000 ' is not a valid duration
-	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:47) ~[spring-core-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:191) ~[spring-core-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.boot.context.properties.bind.BindConverter$CompositeConversionService.convert(BindConverter.java:177) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
-	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:98) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
-	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:90) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
-	at org.springframework.boot.context.properties.bind.Binder.bindProperty(Binder.java:326) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
-	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:265) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
-	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:220) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
-	... 143 common frames omitted
-Caused by: java.lang.IllegalArgumentException: '1000 ' is not a valid duration
-	at org.springframework.boot.convert.DurationStyle.detect(DurationStyle.java:170) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
-	at org.springframework.boot.convert.StringToDurationConverter.convert(StringToDurationConverter.java:65) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
-	at org.springframework.boot.convert.StringToDurationConverter.convert(StringToDurationConverter.java:50) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
-	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:41) ~[spring-core-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	... 150 common frames omitted
-
-2019-05-24 13:41:01.647  INFO 10164 --- [main] com.suxinhaixp.sit.SitApplication        : Starting SitApplication on DESKTOP-769T73B with PID 10164 (D:\OwnWorkspace\sit\target\classes started by Administrator in D:\OwnWorkspace\sit)
-2019-05-24 13:41:01.654  INFO 10164 --- [main] com.suxinhaixp.sit.SitApplication        : No active profile set, falling back to default profiles: default
-2019-05-24 13:41:03.627  INFO 10164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-05-24 13:41:03.627  INFO 10164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-05-24 13:41:03.818  INFO 10164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 172ms. Found 6 repository interfaces.
-2019-05-24 13:41:03.848  INFO 10164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-05-24 13:41:03.856  INFO 10164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-05-24 13:41:03.883  INFO 10164 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.DataRepository.
-2019-05-24 13:41:03.884  INFO 10164 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.ManagerRepository.
-2019-05-24 13:41:03.885  INFO 10164 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.OrderDetailRepository.
-2019-05-24 13:41:03.888  INFO 10164 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.OrderMasterRepository.
-2019-05-24 13:41:03.889  INFO 10164 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.ProductCategoryRepository.
-2019-05-24 13:41:03.891  INFO 10164 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.ProductInfoRepository.
-2019-05-24 13:41:03.892  INFO 10164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19ms. Found 0 repository interfaces.
-2019-05-24 13:41:04.381  INFO 10164 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1aaad156] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-05-24 13:41:04.821  INFO 10164 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 443 (https) 8080 (http)
-2019-05-24 13:41:04.938  INFO 10164 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-05-24 13:41:04.939  INFO 10164 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
-2019-05-24 13:41:05.302  INFO 10164 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/sell]   : Initializing Spring embedded WebApplicationContext
-2019-05-24 13:41:05.303  INFO 10164 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3353 ms
-2019-05-24 13:41:06.403  INFO 10164 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2019-05-24 13:41:06.631  INFO 10164 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
-2019-05-24 13:41:06.639  INFO 10164 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-05-24 13:41:07.414  INFO 10164 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-05-24 13:41:15.122  INFO 10164 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-05-24 13:41:15.157  INFO 10164 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2019-05-24 13:41:18.276  INFO 10164 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-05-24 13:41:19.430  WARN 10164 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'buyerOrderController': Unsatisfied dependency expressed through field 'orderService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderServiceImpl': Unsatisfied dependency expressed through field 'productService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productServiceImpl': Unsatisfied dependency expressed through field 'redisTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redisTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties': Could not bind properties to 'RedisProperties' : prefix=spring.redis, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.redis.timeout' to java.time.Duration
-2019-05-24 13:41:19.431  INFO 10164 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2019-05-24 13:41:19.441  INFO 10164 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
-2019-05-24 13:41:19.450  INFO 10164 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
-2019-05-24 13:41:19.455  INFO 10164 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2019-05-24 13:41:19.495  INFO 10164 --- [main] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2019-05-24 13:41:19.506 ERROR 10164 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Failed to bind properties under 'spring.redis.timeout' to java.time.Duration:
-
-    Property: spring.redis.timeout
-    Value: 1000 
-    Origin: class path resource [application.properties]:118:22
-    Reason: failed to convert java.lang.String to java.time.Duration
-
-Action:
-
-Update your application's configuration
-
-2019-05-24 13:43:16.459  INFO 8676 --- [main] com.suxinhaixp.sit.SitApplication        : Starting SitApplication on DESKTOP-769T73B with PID 8676 (D:\OwnWorkspace\sit\target\classes started by Administrator in D:\OwnWorkspace\sit)
-2019-05-24 13:43:16.467  INFO 8676 --- [main] com.suxinhaixp.sit.SitApplication        : No active profile set, falling back to default profiles: default
-2019-05-24 13:43:18.158  INFO 8676 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-05-24 13:43:18.160  INFO 8676 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-05-24 13:43:18.552  INFO 8676 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 361ms. Found 6 repository interfaces.
-2019-05-24 13:43:18.605  INFO 8676 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-05-24 13:43:18.624  INFO 8676 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-05-24 13:43:18.693  INFO 8676 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.DataRepository.
-2019-05-24 13:43:18.695  INFO 8676 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.ManagerRepository.
-2019-05-24 13:43:18.698  INFO 8676 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.OrderDetailRepository.
-2019-05-24 13:43:18.704  INFO 8676 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.OrderMasterRepository.
-2019-05-24 13:43:18.707  INFO 8676 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.ProductCategoryRepository.
-2019-05-24 13:43:18.712  INFO 8676 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.ProductInfoRepository.
-2019-05-24 13:43:18.714  INFO 8676 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39ms. Found 0 repository interfaces.
-2019-05-24 13:43:19.694  INFO 8676 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$77473379] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-05-24 13:43:20.699  INFO 8676 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 443 (https) 8080 (http)
-2019-05-24 13:43:20.819  INFO 8676 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-05-24 13:43:20.820  INFO 8676 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
-2019-05-24 13:43:21.254  INFO 8676 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/sell]   : Initializing Spring embedded WebApplicationContext
-2019-05-24 13:43:21.255  INFO 8676 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4657 ms
-2019-05-24 13:43:22.718  INFO 8676 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2019-05-24 13:43:23.010  INFO 8676 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
-2019-05-24 13:43:23.017  INFO 8676 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-05-24 13:43:23.962  INFO 8676 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-05-24 13:43:25.536  INFO 8676 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-05-24 13:43:25.579  INFO 8676 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2019-05-24 13:43:28.594  INFO 8676 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-05-24 13:43:32.553  INFO 8676 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-05-24 13:43:32.682  WARN 8676 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-05-24 13:43:33.527  WARN 8676 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2019-05-24 13:43:33.781  INFO 8676 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-05-24 13:43:36.979  INFO 8676 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 443 (https) 8080 (http) with context path '/sell'
-2019-05-24 13:43:36.988  INFO 8676 --- [main] com.suxinhaixp.sit.SitApplication        : Started SitApplication in 21.406 seconds (JVM running for 23.255)
-2019-05-24 13:44:18.124  INFO 8676 --- [Thread-43] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-05-24 13:44:18.212  INFO 8676 --- [Thread-43] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2019-05-24 13:44:18.225  INFO 8676 --- [Thread-43] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
-2019-05-24 13:44:18.244  INFO 8676 --- [Thread-43] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
-2019-05-24 13:44:32.969  INFO 9112 --- [main] com.suxinhaixp.sit.SitApplicationTests   : Starting SitApplicationTests on DESKTOP-769T73B with PID 9112 (started by Administrator in D:\OwnWorkspace\sit)
-2019-05-24 13:44:32.979  INFO 9112 --- [main] com.suxinhaixp.sit.SitApplicationTests   : No active profile set, falling back to default profiles: default
-2019-05-24 13:44:36.734  INFO 9112 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-05-24 13:44:36.738  INFO 9112 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-05-24 13:44:37.394  INFO 9112 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 619ms. Found 6 repository interfaces.
-2019-05-24 13:44:37.451  INFO 9112 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-05-24 13:44:37.453  INFO 9112 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-05-24 13:44:37.496  INFO 9112 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.DataRepository.
-2019-05-24 13:44:37.497  INFO 9112 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.ManagerRepository.
-2019-05-24 13:44:37.499  INFO 9112 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.OrderDetailRepository.
-2019-05-24 13:44:37.504  INFO 9112 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.OrderMasterRepository.
-2019-05-24 13:44:37.506  INFO 9112 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.ProductCategoryRepository.
-2019-05-24 13:44:37.511  INFO 9112 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.ProductInfoRepository.
-2019-05-24 13:44:37.511  INFO 9112 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41ms. Found 0 repository interfaces.
-2019-05-24 13:44:38.903  INFO 9112 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9a7edc82] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-05-24 13:44:40.252  INFO 9112 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2019-05-24 13:44:40.390  INFO 9112 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
-2019-05-24 13:44:40.393  INFO 9112 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-05-24 13:44:40.666  INFO 9112 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-05-24 13:44:42.129  INFO 9112 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-05-24 13:44:42.346  INFO 9112 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2019-05-24 13:44:46.655  INFO 9112 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-05-24 13:44:52.772  INFO 9112 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-05-24 13:44:52.911  WARN 9112 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-05-24 13:44:53.426  WARN 9112 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2019-05-24 13:44:53.600  INFO 9112 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-05-24 13:44:54.831  INFO 9112 --- [main] com.suxinhaixp.sit.SitApplicationTests   : Started SitApplicationTests in 22.695 seconds (JVM running for 25.923)
-2019-05-24 13:44:55.506  INFO 9112 --- [pool-1-thread-3] io.lettuce.core.EpollProvider            : Starting without optional epoll library
-2019-05-24 13:44:55.510  INFO 9112 --- [pool-1-thread-3] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
-2019-05-24 13:44:56.240  INFO 9112 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-05-24 13:44:56.401  WARN 9112 --- [lettuce-timer-3-1] i.l.core.protocol.ConnectionWatchdog     : Cannot execute scheduled reconnect timer, reconnect workers are terminated
-2019-05-24 13:44:57.425  INFO 9112 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2019-05-24 13:44:57.437  INFO 9112 --- [Thread-2] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
-2019-05-24 13:44:57.477  INFO 9112 --- [Thread-2] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
-2019-05-24 13:52:12.045  INFO 3156 --- [main] com.suxinhaixp.sit.SitApplicationTests   : Starting SitApplicationTests on DESKTOP-769T73B with PID 3156 (started by Administrator in D:\OwnWorkspace\sit)
-2019-05-24 13:52:12.054  INFO 3156 --- [main] com.suxinhaixp.sit.SitApplicationTests   : No active profile set, falling back to default profiles: default
-2019-05-24 13:52:14.196  INFO 3156 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-05-24 13:52:14.200  INFO 3156 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-05-24 13:52:14.748  INFO 3156 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 524ms. Found 6 repository interfaces.
-2019-05-24 13:52:14.777  INFO 3156 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-05-24 13:52:14.778  INFO 3156 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-05-24 13:52:14.806  INFO 3156 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.DataRepository.
-2019-05-24 13:52:14.807  INFO 3156 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.ManagerRepository.
-2019-05-24 13:52:14.809  INFO 3156 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.OrderDetailRepository.
-2019-05-24 13:52:14.812  INFO 3156 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.OrderMasterRepository.
-2019-05-24 13:52:14.815  INFO 3156 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.ProductCategoryRepository.
-2019-05-24 13:52:14.816  INFO 3156 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.ProductInfoRepository.
-2019-05-24 13:52:14.817  INFO 3156 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25ms. Found 0 repository interfaces.
-2019-05-24 13:52:16.061  INFO 3156 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$66ac814e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-05-24 13:52:17.109  INFO 3156 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2019-05-24 13:52:17.275  INFO 3156 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
-2019-05-24 13:52:17.278  INFO 3156 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-05-24 13:52:17.566  INFO 3156 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-05-24 13:52:20.804  INFO 3156 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-05-24 13:52:20.916  INFO 3156 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2019-05-24 13:52:25.502  INFO 3156 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-05-24 13:52:32.099  INFO 3156 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-05-24 13:52:32.276  WARN 3156 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-05-24 13:52:32.871  WARN 3156 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2019-05-24 13:52:33.154  INFO 3156 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-05-24 13:52:34.596  INFO 3156 --- [main] com.suxinhaixp.sit.SitApplicationTests   : Started SitApplicationTests in 24.155 seconds (JVM running for 29.144)
-2019-05-24 13:52:35.007  INFO 3156 --- [pool-1-thread-1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
-2019-05-24 13:52:35.012  INFO 3156 --- [pool-1-thread-1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
-2019-05-24 13:52:35.870  INFO 3156 --- [pool-1-thread-7] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
-2019-05-24 13:52:37.999  INFO 3156 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-05-24 13:52:38.358  WARN 3156 --- [pool-1-thread-4] io.netty.channel.AbstractChannel         : Force-closing a channel whose registration task was not accepted by an event loop: [id: 0x538e7ff8]
-
-java.util.concurrent.RejectedExecutionException: event executor terminated
-	at io.netty.util.concurrent.SingleThreadEventExecutor.reject(SingleThreadEventExecutor.java:845) ~[netty-common-4.1.34.Final.jar:4.1.34.Final]
-	at io.netty.util.concurrent.SingleThreadEventExecutor.offerTask(SingleThreadEventExecutor.java:328) ~[netty-common-4.1.34.Final.jar:4.1.34.Final]
-	at io.netty.util.concurrent.SingleThreadEventExecutor.addTask(SingleThreadEventExecutor.java:321) ~[netty-common-4.1.34.Final.jar:4.1.34.Final]
-	at io.netty.util.concurrent.SingleThreadEventExecutor.execute(SingleThreadEventExecutor.java:756) ~[netty-common-4.1.34.Final.jar:4.1.34.Final]
-	at io.netty.channel.AbstractChannel$AbstractUnsafe.register(AbstractChannel.java:484) ~[netty-transport-4.1.34.Final.jar:4.1.34.Final]
-	at io.netty.channel.SingleThreadEventLoop.register(SingleThreadEventLoop.java:80) [netty-transport-4.1.34.Final.jar:4.1.34.Final]
-	at io.netty.channel.SingleThreadEventLoop.register(SingleThreadEventLoop.java:74) [netty-transport-4.1.34.Final.jar:4.1.34.Final]
-	at io.netty.channel.MultithreadEventLoopGroup.register(MultithreadEventLoopGroup.java:86) [netty-transport-4.1.34.Final.jar:4.1.34.Final]
-	at io.netty.bootstrap.AbstractBootstrap.initAndRegister(AbstractBootstrap.java:333) [netty-transport-4.1.34.Final.jar:4.1.34.Final]
-	at io.netty.bootstrap.Bootstrap.doResolveAndConnect(Bootstrap.java:163) [netty-transport-4.1.34.Final.jar:4.1.34.Final]
-	at io.netty.bootstrap.Bootstrap.connect(Bootstrap.java:145) [netty-transport-4.1.34.Final.jar:4.1.34.Final]
-	at io.lettuce.core.AbstractRedisClient.initializeChannelAsync0(AbstractRedisClient.java:314) [lettuce-core-5.1.6.RELEASE.jar:na]
-	at io.lettuce.core.AbstractRedisClient.lambda$initializeChannelAsync$0(AbstractRedisClient.java:295) [lettuce-core-5.1.6.RELEASE.jar:na]
-	at reactor.core.publisher.LambdaMonoSubscriber.onNext(LambdaMonoSubscriber.java:137) ~[reactor-core-3.2.8.RELEASE.jar:3.2.8.RELEASE]
-	at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:192) ~[reactor-core-3.2.8.RELEASE.jar:3.2.8.RELEASE]
-	at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:192) ~[reactor-core-3.2.8.RELEASE.jar:3.2.8.RELEASE]
-	at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:192) ~[reactor-core-3.2.8.RELEASE.jar:3.2.8.RELEASE]
-	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1505) ~[reactor-core-3.2.8.RELEASE.jar:3.2.8.RELEASE]
-	at reactor.core.publisher.MonoCallable.subscribe(MonoCallable.java:61) ~[reactor-core-3.2.8.RELEASE.jar:3.2.8.RELEASE]
-	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52) ~[reactor-core-3.2.8.RELEASE.jar:3.2.8.RELEASE]
-	at reactor.core.publisher.MonoPeek.subscribe(MonoPeek.java:71) ~[reactor-core-3.2.8.RELEASE.jar:3.2.8.RELEASE]
-	at reactor.core.publisher.MonoPeek.subscribe(MonoPeek.java:71) ~[reactor-core-3.2.8.RELEASE.jar:3.2.8.RELEASE]
-	at reactor.core.publisher.MonoPeek.subscribe(MonoPeek.java:71) ~[reactor-core-3.2.8.RELEASE.jar:3.2.8.RELEASE]
-	at reactor.core.publisher.Mono.subscribe(Mono.java:3710) ~[reactor-core-3.2.8.RELEASE.jar:3.2.8.RELEASE]
-	at reactor.core.publisher.Mono.subscribeWith(Mono.java:3816) ~[reactor-core-3.2.8.RELEASE.jar:3.2.8.RELEASE]
-	at reactor.core.publisher.Mono.subscribe(Mono.java:3704) ~[reactor-core-3.2.8.RELEASE.jar:3.2.8.RELEASE]
-	at reactor.core.publisher.Mono.subscribe(Mono.java:3671) ~[reactor-core-3.2.8.RELEASE.jar:3.2.8.RELEASE]
-	at reactor.core.publisher.Mono.subscribe(Mono.java:3643) ~[reactor-core-3.2.8.RELEASE.jar:3.2.8.RELEASE]
-	at io.lettuce.core.AbstractRedisClient.initializeChannelAsync(AbstractRedisClient.java:290) [lettuce-core-5.1.6.RELEASE.jar:na]
-	at io.lettuce.core.RedisClient.connectStatefulAsync(RedisClient.java:314) ~[lettuce-core-5.1.6.RELEASE.jar:na]
-	at io.lettuce.core.RedisClient.connectStandaloneAsync(RedisClient.java:271) ~[lettuce-core-5.1.6.RELEASE.jar:na]
-	at io.lettuce.core.RedisClient.connect(RedisClient.java:204) ~[lettuce-core-5.1.6.RELEASE.jar:na]
-	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:113) ~[spring-data-redis-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at java.util.Optional.orElseGet(Optional.java:267) ~[na:1.8.0_201]
-	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:113) ~[spring-data-redis-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1104) ~[spring-data-redis-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1084) ~[spring-data-redis-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedConnection(LettuceConnectionFactory.java:866) ~[spring-data-redis-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getConnection(LettuceConnectionFactory.java:341) ~[spring-data-redis-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:132) ~[spring-data-redis-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:95) ~[spring-data-redis-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:82) ~[spring-data-redis-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:211) ~[spring-data-redis-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:184) ~[spring-data-redis-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:95) ~[spring-data-redis-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.data.redis.core.DefaultValueOperations.get(DefaultValueOperations.java:53) ~[spring-data-redis-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at com.suxinhaixp.sit.service.Imp.ProductServiceImpl.findOne(ProductServiceImpl.java:43) ~[classes/:na]
-	at com.suxinhaixp.sit.service.Imp.ProductServiceImpl$$FastClassBySpringCGLIB$$50b23585.invoke(<generated>) ~[classes/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at com.suxinhaixp.sit.service.Imp.ProductServiceImpl$$EnhancerBySpringCGLIB$$44ac42a4.findOne(<generated>) ~[classes/:na]
-	at com.suxinhaixp.sit.SitApplicationTests$1.run(SitApplicationTests.java:31) ~[test-classes/:na]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_201]
-	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) ~[na:1.8.0_201]
-	at java.util.concurrent.FutureTask.run(FutureTask.java) ~[na:1.8.0_201]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_201]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_201]
-	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_201]
-
-2019-05-24 13:52:38.370 ERROR 3156 --- [pool-1-thread-4] i.n.u.c.D.rejectedExecution              : Failed to submit a listener notification task. Event loop shut down?
+2019-05-31 16:56:34.041  INFO 15600 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2019-05-31 16:56:34.045  INFO 15600 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-05-31 16:56:34.437  INFO 15600 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-05-31 16:56:36.291  INFO 15600 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-05-31 16:56:36.342  INFO 15600 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-05-31 16:56:38.233  INFO 15600 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-05-31 16:56:42.220  INFO 15600 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-31 16:56:42.352  WARN 15600 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-05-31 16:56:42.759  WARN 15600 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-05-31 16:56:42.884  INFO 15600 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-05-31 16:56:44.188  INFO 15600 --- [main] com.suxinhaixp.sit.SitApplicationTests   : Started SitApplicationTests in 16.139 seconds (JVM running for 17.839)
+2019-05-31 16:56:44.713  INFO 15600 --- [main] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2019-05-31 16:56:44.716  INFO 15600 --- [main] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2019-05-31 16:56:45.484  INFO 15600 --- [pool-1-thread-11] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-05-31 16:56:47.081  INFO 15600 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-05-31 16:56:47.244 ERROR 15600 --- [pool-1-thread-8] i.n.u.c.D.rejectedExecution              : Failed to submit a listener notification task. Event loop shut down?
 
 java.util.concurrent.RejectedExecutionException: event executor terminated
 	at io.netty.util.concurrent.SingleThreadEventExecutor.reject(SingleThreadEventExecutor.java:845) ~[netty-common-4.1.34.Final.jar:4.1.34.Final]
@@ -563,56 +121,19 @@ java.util.concurrent.RejectedExecutionException: event executor terminated
 	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:184) ~[spring-data-redis-2.1.6.RELEASE.jar:2.1.6.RELEASE]
 	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:95) ~[spring-data-redis-2.1.6.RELEASE.jar:2.1.6.RELEASE]
 	at org.springframework.data.redis.core.DefaultValueOperations.get(DefaultValueOperations.java:53) ~[spring-data-redis-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at com.suxinhaixp.sit.service.Imp.ProductServiceImpl.findOne(ProductServiceImpl.java:43) ~[classes/:na]
+	at com.suxinhaixp.sit.service.Imp.ProductServiceImpl.findOne(ProductServiceImpl.java:38) ~[classes/:na]
 	at com.suxinhaixp.sit.service.Imp.ProductServiceImpl$$FastClassBySpringCGLIB$$50b23585.invoke(<generated>) ~[classes/:na]
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.1.6.RELEASE.jar:5.1.6.RELEASE]
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at com.suxinhaixp.sit.service.Imp.ProductServiceImpl$$EnhancerBySpringCGLIB$$44ac42a4.findOne(<generated>) ~[classes/:na]
+	at com.suxinhaixp.sit.service.Imp.ProductServiceImpl$$EnhancerBySpringCGLIB$$5f35d728.findOne(<generated>) ~[classes/:na]
 	at com.suxinhaixp.sit.SitApplicationTests$1.run(SitApplicationTests.java:31) ~[test-classes/:na]
 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_201]
-	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) ~[na:1.8.0_201]
-	at java.util.concurrent.FutureTask.run(FutureTask.java) ~[na:1.8.0_201]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_201]
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_201]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_201]
 	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_201]
 
-2019-05-24 13:52:39.308  INFO 3156 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2019-05-24 13:52:39.316  INFO 3156 --- [Thread-2] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
-2019-05-24 13:52:39.337  INFO 3156 --- [Thread-2] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
-2019-05-24 13:59:14.912  INFO 2036 --- [main] com.suxinhaixp.sit.SitApplicationTests   : Starting SitApplicationTests on DESKTOP-769T73B with PID 2036 (started by Administrator in D:\OwnWorkspace\sit)
-2019-05-24 13:59:14.923  INFO 2036 --- [main] com.suxinhaixp.sit.SitApplicationTests   : No active profile set, falling back to default profiles: default
-2019-05-24 13:59:17.554  INFO 2036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-05-24 13:59:17.560  INFO 2036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-05-24 13:59:17.961  INFO 2036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 382ms. Found 6 repository interfaces.
-2019-05-24 13:59:17.994  INFO 2036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-05-24 13:59:17.997  INFO 2036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-05-24 13:59:18.029  INFO 2036 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.DataRepository.
-2019-05-24 13:59:18.031  INFO 2036 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.ManagerRepository.
-2019-05-24 13:59:18.033  INFO 2036 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.OrderDetailRepository.
-2019-05-24 13:59:18.037  INFO 2036 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.OrderMasterRepository.
-2019-05-24 13:59:18.043  INFO 2036 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.ProductCategoryRepository.
-2019-05-24 13:59:18.044  INFO 2036 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.ProductInfoRepository.
-2019-05-24 13:59:18.045  INFO 2036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32ms. Found 0 repository interfaces.
-2019-05-24 13:59:19.664  INFO 2036 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c244f39b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-05-24 13:59:20.958  INFO 2036 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2019-05-24 13:59:21.207  INFO 2036 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
-2019-05-24 13:59:21.213  INFO 2036 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-05-24 13:59:21.698  INFO 2036 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-05-24 13:59:26.545  INFO 2036 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-05-24 13:59:26.618  INFO 2036 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2019-05-24 13:59:31.483  INFO 2036 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-05-24 13:59:37.622  INFO 2036 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-05-24 13:59:37.787  WARN 2036 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-05-24 13:59:38.149  WARN 2036 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2019-05-24 13:59:38.272  INFO 2036 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-05-24 13:59:39.743  INFO 2036 --- [main] com.suxinhaixp.sit.SitApplicationTests   : Started SitApplicationTests in 26.642 seconds (JVM running for 31.527)
-2019-05-24 13:59:40.180  INFO 2036 --- [pool-1-thread-12] io.lettuce.core.EpollProvider            : Starting without optional epoll library
-2019-05-24 13:59:40.184  INFO 2036 --- [pool-1-thread-12] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
-2019-05-24 13:59:41.866  INFO 2036 --- [pool-1-thread-22] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
-2019-05-24 13:59:45.648  INFO 2036 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-05-24 13:59:46.060  WARN 2036 --- [pool-1-thread-24] io.netty.channel.AbstractChannel         : Force-closing a channel whose registration task was not accepted by an event loop: [id: 0x747f73df]
+2019-05-31 16:56:47.266  WARN 15600 --- [pool-1-thread-1] io.netty.channel.AbstractChannel         : Force-closing a channel whose registration task was not accepted by an event loop: [id: 0xac92f98f]
 
 java.util.concurrent.RejectedExecutionException: event executor terminated
 	at io.netty.util.concurrent.SingleThreadEventExecutor.reject(SingleThreadEventExecutor.java:845) ~[netty-common-4.1.34.Final.jar:4.1.34.Final]
@@ -665,16 +186,15 @@ java.util.concurrent.RejectedExecutionException: event executor terminated
 	at com.suxinhaixp.sit.service.Imp.ProductServiceImpl$$FastClassBySpringCGLIB$$50b23585.invoke(<generated>) ~[classes/:na]
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.1.6.RELEASE.jar:5.1.6.RELEASE]
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at com.suxinhaixp.sit.service.Imp.ProductServiceImpl$$EnhancerBySpringCGLIB$$b850d47b.findOne(<generated>) ~[classes/:na]
+	at com.suxinhaixp.sit.service.Imp.ProductServiceImpl$$EnhancerBySpringCGLIB$$5f35d728.findOne(<generated>) ~[classes/:na]
 	at com.suxinhaixp.sit.SitApplicationTests$1.run(SitApplicationTests.java:31) ~[test-classes/:na]
 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_201]
-	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) ~[na:1.8.0_201]
-	at java.util.concurrent.FutureTask.run(FutureTask.java) ~[na:1.8.0_201]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_201]
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_201]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_201]
 	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_201]
 
-2019-05-24 13:59:46.073 ERROR 2036 --- [pool-1-thread-24] i.n.u.c.D.rejectedExecution              : Failed to submit a listener notification task. Event loop shut down?
+2019-05-31 16:56:47.269 ERROR 15600 --- [pool-1-thread-1] i.n.u.c.D.rejectedExecution              : Failed to submit a listener notification task. Event loop shut down?
 
 java.util.concurrent.RejectedExecutionException: event executor terminated
 	at io.netty.util.concurrent.SingleThreadEventExecutor.reject(SingleThreadEventExecutor.java:845) ~[netty-common-4.1.34.Final.jar:4.1.34.Final]
@@ -725,54 +245,14 @@ java.util.concurrent.RejectedExecutionException: event executor terminated
 	at com.suxinhaixp.sit.service.Imp.ProductServiceImpl$$FastClassBySpringCGLIB$$50b23585.invoke(<generated>) ~[classes/:na]
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.1.6.RELEASE.jar:5.1.6.RELEASE]
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at com.suxinhaixp.sit.service.Imp.ProductServiceImpl$$EnhancerBySpringCGLIB$$b850d47b.findOne(<generated>) ~[classes/:na]
+	at com.suxinhaixp.sit.service.Imp.ProductServiceImpl$$EnhancerBySpringCGLIB$$5f35d728.findOne(<generated>) ~[classes/:na]
 	at com.suxinhaixp.sit.SitApplicationTests$1.run(SitApplicationTests.java:31) ~[test-classes/:na]
 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_201]
-	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) ~[na:1.8.0_201]
-	at java.util.concurrent.FutureTask.run(FutureTask.java) ~[na:1.8.0_201]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_201]
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_201]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_201]
 	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_201]
 
-2019-05-24 13:59:47.002  INFO 2036 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2019-05-24 13:59:47.031  INFO 2036 --- [Thread-2] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
-2019-05-24 13:59:47.053  INFO 2036 --- [Thread-2] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
-2019-05-24 14:02:35.533  INFO 10148 --- [main] com.suxinhaixp.sit.SitApplication        : Starting SitApplication on DESKTOP-769T73B with PID 10148 (D:\OwnWorkspace\sit\target\classes started by Administrator in D:\OwnWorkspace\sit)
-2019-05-24 14:02:35.541  INFO 10148 --- [main] com.suxinhaixp.sit.SitApplication        : No active profile set, falling back to default profiles: default
-2019-05-24 14:02:37.833  INFO 10148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-05-24 14:02:37.834  INFO 10148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-05-24 14:02:38.176  INFO 10148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 297ms. Found 6 repository interfaces.
-2019-05-24 14:02:38.211  INFO 10148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-05-24 14:02:38.217  INFO 10148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-05-24 14:02:38.249  INFO 10148 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.DataRepository.
-2019-05-24 14:02:38.250  INFO 10148 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.ManagerRepository.
-2019-05-24 14:02:38.252  INFO 10148 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.OrderDetailRepository.
-2019-05-24 14:02:38.255  INFO 10148 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.OrderMasterRepository.
-2019-05-24 14:02:38.256  INFO 10148 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.ProductCategoryRepository.
-2019-05-24 14:02:38.258  INFO 10148 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.suxinhaixp.sit.dao.ProductInfoRepository.
-2019-05-24 14:02:38.259  INFO 10148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24ms. Found 0 repository interfaces.
-2019-05-24 14:02:39.477  INFO 10148 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4d8720cb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-05-24 14:02:40.199  INFO 10148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 443 (https) 8080 (http)
-2019-05-24 14:02:40.259  INFO 10148 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-05-24 14:02:40.259  INFO 10148 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
-2019-05-24 14:02:40.538  INFO 10148 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/sell]   : Initializing Spring embedded WebApplicationContext
-2019-05-24 14:02:40.539  INFO 10148 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4876 ms
-2019-05-24 14:02:41.186  INFO 10148 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2019-05-24 14:02:41.434  INFO 10148 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
-2019-05-24 14:02:41.438  INFO 10148 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-05-24 14:02:41.729  INFO 10148 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-05-24 14:02:47.496  INFO 10148 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-05-24 14:02:47.570  INFO 10148 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2019-05-24 14:02:52.390  INFO 10148 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-05-24 14:02:55.148  INFO 10148 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-05-24 14:02:55.267  WARN 10148 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-05-24 14:02:56.000  WARN 10148 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2019-05-24 14:02:56.092  INFO 10148 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-05-24 14:02:57.675  INFO 10148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 443 (https) 8080 (http) with context path '/sell'
-2019-05-24 14:02:57.686  INFO 10148 --- [main] com.suxinhaixp.sit.SitApplication        : Started SitApplication in 22.928 seconds (JVM running for 24.712)
-2019-05-24 14:12:16.891  INFO 10148 --- [Thread-38] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-05-24 14:12:16.953  INFO 10148 --- [Thread-38] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2019-05-24 14:12:16.970  INFO 10148 --- [Thread-38] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
-2019-05-24 14:12:17.009  INFO 10148 --- [Thread-38] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-05-31 16:56:48.243  INFO 15600 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-05-31 16:56:48.247  INFO 15600 --- [Thread-2] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2019-05-31 16:56:48.254  INFO 15600 --- [Thread-2] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
